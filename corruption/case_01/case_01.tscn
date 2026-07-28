@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://ckd8d37i5hdd6"]
+
+[ext_resource type="Texture2D" uid="uid://c1k2osqd42lds" path="res://case_01/paper_01.png" id="1_2ax1d"]
+[ext_resource type="Script" uid="uid://b6jj2nk68k0o4" path="res://case_01/scripts/case_01.gd" id="1_lc27k"]
+[ext_resource type="FontFile" uid="uid://d3x8th7umck2e" path="res://font_01.ttf" id="2_lc27k"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_15q6v"]
+font = ExtResource("2_lc27k")
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[node name="case_01" type="Node2D" unique_id=1467643219]
+script = ExtResource("1_lc27k")
+
+[node name="Paper01" type="Sprite2D" parent="." unique_id=1545052143]
+position = Vector2(584, 360)
+texture = ExtResource("1_2ax1d")
+
+[node name="label_01" type="Label" parent="Paper01" unique_id=1547403125]
+offset_left = -344.0
+offset_top = -320.0
+offset_right = -146.0
+offset_bottom = -280.0
+text = "CASO 001"
+label_settings = SubResource("LabelSettings_15q6v")
+
+[node name="label_02" type="Label" parent="Paper01" unique_id=542226439]
+offset_left = -344.0
+offset_top = -240.0
+offset_right = -22.0
+offset_bottom = -200.0
+text = "DATOS DEL DENUNCIADO"
+label_settings = SubResource("LabelSettings_15q6v")
+
+[node name="label_03" type="Label" parent="Paper01" unique_id=1008462369]
+offset_left = -344.0
+offset_top = -200.0
+offset_right = -22.0
+offset_bottom = -160.0
+text = "XXXXXXXXXXXXXXXXXXX"
+label_settings = SubResource("LabelSettings_15q6v")
+
+[node name="label_04" type="Label" parent="Paper01" unique_id=2052379530]
+offset_top = -240.0
+offset_right = 338.0
+offset_bottom = -200.0
+text = "DATOS DEL DENUNCIANTE"
+label_settings = SubResource("LabelSettings_15q6v")
+
+[node name="label_05" type="Label" parent="Paper01" unique_id=1555851331]
+offset_top = -200.0
+offset_right = 322.0
+offset_bottom = -160.0
+text = "XXXXXXXXXXXXXXXXXXX"
+label_settings = SubResource("LabelSettings_15q6v")
+
+[node name="label_06" type="Label" parent="Paper01" unique_id=976071701]
+offset_left = -344.0
+offset_top = -128.0
+offset_right = -22.0
+offset_bottom = -88.0
+text = "XX AÑOS"
+label_settings = SubResource("LabelSettings_15q6v")
+
+[node name="label_07" type="Label" parent="Paper01" unique_id=571213343]
+offset_top = -128.0
+offset_right = 322.0
+offset_bottom = -88.0
+text = "XX AÑOS"
+label_settings = SubResource("LabelSettings_15q6v")
+
+[node name="label_08" type="Label" parent="Paper01" unique_id=883737150]
+offset_left = -8.0
+offset_top = -88.0
+offset_right = 314.0
+offset_bottom = -48.0
+text = " XXXXXX"
+label_settings = SubResource("LabelSettings_15q6v")
+
+[node name="label_09" type="Label" parent="Paper01" unique_id=1223255959]
+offset_left = -344.0
+offset_top = -88.0
+offset_right = -22.0
+offset_bottom = -48.0
+text = "XXXXXX"
+label_settings = SubResource("LabelSettings_15q6v")
+
+[node name="label_10" type="Label" parent="Paper01" unique_id=1592307858]
+offset_left = -344.0
+offset_top = 24.0
+offset_right = -22.0
+offset_bottom = 64.0
+text = "TESTIGOS"
+label_settings = SubResource("LabelSettings_15q6v")
+
+[node name="label_12" type="Label" parent="Paper01" unique_id=1751565528]
+offset_left = -344.0
+offset_top = 96.0
+offset_right = -22.0
+offset_bottom = 136.0
+text = "PROCEDIMIENTO
+XXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXX"
+label_settings = SubResource("LabelSettings_15q6v")
+
+[node name="label_11" type="Label" parent="Paper01" unique_id=939945688]
+offset_top = 24.0
+offset_right = 322.0
+offset_bottom = 64.0
+text = "pruebas"
+label_settings = SubResource("LabelSettings_15q6v")

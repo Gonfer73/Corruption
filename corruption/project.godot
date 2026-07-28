@@ -11,12 +11,16 @@ config_version=5
 [application]
 
 config/name="Corruption"
+run/main_scene="uid://bugr3jca4wli0"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+global="*uid://b12shfag23kn7"
+
 [display]
 
-window/size/mode=2
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 

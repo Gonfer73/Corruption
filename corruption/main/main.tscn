@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://bugr3jca4wli0"]
 
 [ext_resource type="Texture2D" uid="uid://d3ejq3i4x3cp2" path="res://main/sprites/back_001.png" id="1_53q0u"]
+[ext_resource type="Texture2D" uid="uid://daou3tqoxubob" path="res://main/sprites/character_01.png" id="2_xwkvk"]
+[ext_resource type="Texture2D" uid="uid://8sxilrv274dr" path="res://main/sprites/back_002.png" id="3_c651c"]
 
 [node name="main" type="Node2D" unique_id=703750880]
 
@@ -8,3 +10,18 @@
 position = Vector2(578, 324)
 rotation = 3.1430352
 texture = ExtResource("1_53q0u")
+
+[node name="Character01" type="Sprite2D" parent="." unique_id=1621624015]
+position = Vector2(167, 87)
+scale = Vector2(0.3698701, 0.40314952)
+texture = ExtResource("2_xwkvk")
+flip_h = true
+
+[node name="Character02" type="Sprite2D" parent="." unique_id=217363621]
+position = Vector2(987.99994, 80)
+scale = Vector2(0.3769254, 0.406156)
+texture = ExtResource("2_xwkvk")
+
+[node name="Back002" type="Sprite2D" parent="." unique_id=767982283]
+position = Vector2(696, 544)
+texture = ExtResource("3_c651c")
