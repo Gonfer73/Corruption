@@ -21,7 +21,7 @@ global="*uid://b12shfag23kn7"
 
 [display]
 
-window/stretch/mode="canvas_items"
+window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 
 [physics]

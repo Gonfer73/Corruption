@@ -35,10 +35,12 @@ label_settings = SubResource("LabelSettings_15q6v")
 [node name="label_03" type="Label" parent="Paper01" unique_id=1008462369]
 offset_left = -344.0
 offset_top = -200.0
-offset_right = -22.0
-offset_bottom = -160.0
-text = "XXXXXXXXXXXXXXXXXXX"
+offset_right = -48.0
+offset_bottom = -135.0
+text = "
+"
 label_settings = SubResource("LabelSettings_15q6v")
+autowrap_mode = 3
 
 [node name="label_04" type="Label" parent="Paper01" unique_id=2052379530]
 offset_top = -240.0
@@ -47,12 +49,14 @@ offset_bottom = -200.0
 text = "DATOS DEL DENUNCIANTE"
 label_settings = SubResource("LabelSettings_15q6v")
 
-[node name="label_05" type="Label" parent="Paper01" unique_id=1555851331]
+[node name="label_05" type="Label" parent="Paper01" unique_id=1235131780]
 offset_top = -200.0
-offset_right = 322.0
-offset_bottom = -160.0
-text = "XXXXXXXXXXXXXXXXXXX"
+offset_right = 296.0
+offset_bottom = -135.0
+text = "
+"
 label_settings = SubResource("LabelSettings_15q6v")
+autowrap_mode = 3
 
 [node name="label_06" type="Label" parent="Paper01" unique_id=976071701]
 offset_left = -344.0
@@ -70,18 +74,17 @@ text = "XX AÑOS"
 label_settings = SubResource("LabelSettings_15q6v")
 
 [node name="label_08" type="Label" parent="Paper01" unique_id=883737150]
-offset_left = -8.0
-offset_top = -88.0
-offset_right = 314.0
-offset_bottom = -48.0
-text = " XXXXXX"
+offset_left = -344.0
+offset_top = -96.0
+offset_right = -22.0
+offset_bottom = -56.0
+text = "XXXXXX"
 label_settings = SubResource("LabelSettings_15q6v")
 
 [node name="label_09" type="Label" parent="Paper01" unique_id=1223255959]
-offset_left = -344.0
-offset_top = -88.0
-offset_right = -22.0
-offset_bottom = -48.0
+offset_top = -96.0
+offset_right = 322.0
+offset_bottom = -56.0
 text = "XXXXXX"
 label_settings = SubResource("LabelSettings_15q6v")
 
@@ -99,8 +102,7 @@ offset_top = 96.0
 offset_right = -22.0
 offset_bottom = 136.0
 text = "PROCEDIMIENTO
-XXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXX"
+DIVORCIO"
 label_settings = SubResource("LabelSettings_15q6v")
 
 [node name="label_11" type="Label" parent="Paper01" unique_id=939945688]
