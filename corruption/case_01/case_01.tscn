@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://ckd8d37i5hdd6"]
 
-[ext_resource type="Texture2D" uid="uid://c1k2osqd42lds" path="res://case_01/paper_01.png" id="1_2ax1d"]
 [ext_resource type="Script" uid="uid://b6jj2nk68k0o4" path="res://case_01/scripts/case_01.gd" id="1_lc27k"]
 [ext_resource type="FontFile" uid="uid://d3x8th7umck2e" path="res://font_01.ttf" id="2_lc27k"]
+[ext_resource type="Texture2D" uid="uid://c1k2osqd42lds" path="res://case_01/sprites/paper_01.png" id="2_nqufs"]
+[ext_resource type="Texture2D" uid="uid://blyshij385vbn" path="res://case_01/sprites/icon_01.png" id="4_nqufs"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_15q6v"]
 font = ExtResource("2_lc27k")
@@ -14,7 +15,7 @@ script = ExtResource("1_lc27k")
 
 [node name="Paper01" type="Sprite2D" parent="." unique_id=1545052143]
 position = Vector2(584, 360)
-texture = ExtResource("1_2ax1d")
+texture = ExtResource("2_nqufs")
 
 [node name="label_01" type="Label" parent="Paper01" unique_id=1547403125]
 offset_left = -344.0
@@ -96,6 +97,23 @@ offset_bottom = 64.0
 text = "TESTIGOS"
 label_settings = SubResource("LabelSettings_15q6v")
 
+[node name="label_10_bt" type="Button" parent="Paper01/label_10" unique_id=272648986]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 24.0
+
+[node name="label_11" type="Label" parent="Paper01" unique_id=939945688]
+offset_top = 24.0
+offset_right = 322.0
+offset_bottom = 64.0
+text = "pruebas"
+label_settings = SubResource("LabelSettings_15q6v")
+
+[node name="label_11_bt" type="Button" parent="Paper01/label_11" unique_id=520463130]
+layout_mode = 0
+offset_right = 120.0
+offset_bottom = 24.0
+
 [node name="label_12" type="Label" parent="Paper01" unique_id=1751565528]
 offset_left = -344.0
 offset_top = 96.0
@@ -105,9 +123,224 @@ text = "PROCEDIMIENTO
 DIVORCIO"
 label_settings = SubResource("LabelSettings_15q6v")
 
-[node name="label_11" type="Label" parent="Paper01" unique_id=939945688]
-offset_top = 24.0
-offset_right = 322.0
-offset_bottom = 64.0
-text = "pruebas"
+[node name="back_bt_01" type="Button" parent="Paper01" unique_id=1346084316]
+offset_left = -344.0
+offset_top = 192.0
+offset_right = -272.0
+offset_bottom = 264.0
+icon = ExtResource("4_nqufs")
+
+[node name="Paper02" type="Sprite2D" parent="." unique_id=967738167]
+visible = false
+position = Vector2(584, 360)
+texture = ExtResource("2_nqufs")
+
+[node name="label_13" type="Label" parent="Paper02" unique_id=2043498862]
+offset_left = -344.0
+offset_top = -304.0
+offset_right = -22.0
+offset_bottom = -239.0
+text = "TESTIMONIO TESTIGO 1"
 label_settings = SubResource("LabelSettings_15q6v")
+
+[node name="label_13_bt" type="Button" parent="Paper02/label_13" unique_id=1841093783]
+layout_mode = 0
+offset_right = 288.0
+offset_bottom = 24.0
+
+[node name="label_14" type="Label" parent="Paper02" unique_id=98655033]
+offset_left = -344.0
+offset_top = -248.0
+offset_right = -22.0
+offset_bottom = -183.0
+text = "TESTIMONIO TESTIGO 2
+"
+label_settings = SubResource("LabelSettings_15q6v")
+
+[node name="label_14_bt" type="Button" parent="Paper02/label_14" unique_id=1119385989]
+layout_mode = 0
+offset_right = 288.0
+offset_bottom = 24.0
+
+[node name="back_bt_02" type="Button" parent="Paper02" unique_id=1583829427]
+offset_left = -344.0
+offset_top = 192.0
+offset_right = -272.0
+offset_bottom = 264.0
+icon = ExtResource("4_nqufs")
+
+[node name="Paper03" type="Sprite2D" parent="." unique_id=949783519]
+visible = false
+position = Vector2(584, 360)
+texture = ExtResource("2_nqufs")
+
+[node name="label_15" type="Label" parent="Paper03" unique_id=1683874926]
+offset_left = -328.0
+offset_top = -312.0
+offset_right = 328.0
+offset_bottom = -179.0
+text = "Si tuviera que elegir entre alguno de mis dos
+padres elegiría definitivamente a \"                        \"
+\"                     \", es mucho más egoísta y nunca me
+deja salir hasta tarde"
+label_settings = SubResource("LabelSettings_15q6v")
+autowrap_mode = 3
+
+[node name="back_bt_03" type="Button" parent="Paper03" unique_id=63322580]
+offset_left = -344.0
+offset_top = 192.0
+offset_right = -272.0
+offset_bottom = 264.0
+icon = ExtResource("4_nqufs")
+
+[node name="Paper04" type="Sprite2D" parent="." unique_id=1478659337]
+visible = false
+position = Vector2(584, 360)
+texture = ExtResource("2_nqufs")
+
+[node name="back_bt_04" type="Button" parent="Paper04" unique_id=1982351248]
+offset_left = -344.0
+offset_top = 192.0
+offset_right = -272.0
+offset_bottom = 264.0
+icon = ExtResource("4_nqufs")
+
+[node name="label_16" type="Label" parent="Paper04" unique_id=1105996834]
+offset_left = -328.0
+offset_top = -312.0
+offset_right = 328.0
+offset_bottom = -179.0
+label_settings = SubResource("LabelSettings_15q6v")
+autowrap_mode = 3
+
+[node name="Paper05" type="Sprite2D" parent="." unique_id=534557679]
+visible = false
+position = Vector2(584, 360)
+texture = ExtResource("2_nqufs")
+
+[node name="label_18" type="Label" parent="Paper05" unique_id=851297069]
+offset_left = -328.0
+offset_top = -312.0
+offset_right = 328.0
+offset_bottom = -179.0
+text = "Nómina del denunciado"
+label_settings = SubResource("LabelSettings_15q6v")
+autowrap_mode = 3
+
+[node name="label_18_bt" type="Button" parent="Paper05/label_18" unique_id=1969457475]
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 24.0
+
+[node name="label_19" type="Label" parent="Paper05" unique_id=1418129471]
+offset_left = -328.0
+offset_top = -280.0
+offset_right = 328.0
+offset_bottom = -147.0
+text = "Propiedades del denunciado"
+label_settings = SubResource("LabelSettings_15q6v")
+autowrap_mode = 3
+
+[node name="label_19_bt" type="Button" parent="Paper05/label_19" unique_id=238387979]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 24.0
+
+[node name="label_20" type="Label" parent="Paper05" unique_id=1362640142]
+offset_left = -328.0
+offset_top = -248.0
+offset_right = 328.0
+offset_bottom = -115.0
+text = "Nómina del den8nciante"
+label_settings = SubResource("LabelSettings_15q6v")
+autowrap_mode = 3
+
+[node name="label_20_bt" type="Button" parent="Paper05/label_20" unique_id=1270152354]
+layout_mode = 0
+offset_right = 336.0
+offset_bottom = 24.0
+
+[node name="label_21" type="Label" parent="Paper05" unique_id=604521704]
+offset_left = -328.0
+offset_top = -216.0
+offset_right = 328.0
+offset_bottom = -83.0
+text = "Propiedades del denunciante"
+label_settings = SubResource("LabelSettings_15q6v")
+autowrap_mode = 3
+
+[node name="label_21_bt" type="Button" parent="Paper05/label_21" unique_id=444733312]
+layout_mode = 0
+offset_right = 416.0
+offset_bottom = 24.0
+
+[node name="back_bt_05" type="Button" parent="Paper05" unique_id=502493186]
+offset_left = -344.0
+offset_top = 192.0
+offset_right = -272.0
+offset_bottom = 264.0
+icon = ExtResource("4_nqufs")
+
+[node name="Paper06" type="Sprite2D" parent="." unique_id=1661367739]
+visible = false
+position = Vector2(584, 360)
+texture = ExtResource("2_nqufs")
+
+[node name="back_bt_06" type="Button" parent="Paper06" unique_id=899985920]
+offset_left = -344.0
+offset_top = 192.0
+offset_right = -272.0
+offset_bottom = 264.0
+icon = ExtResource("4_nqufs")
+
+[node name="label_22" type="Label" parent="Paper06" unique_id=1557514545]
+offset_left = -328.0
+offset_top = -312.0
+offset_right = 328.0
+offset_bottom = -179.0
+text = "SUELDO: 35446'84 € anuales
+Puesto: Ingenierio Informático de subredes directivo
+Empresa: PH Inc.
+Permanencia durante 3 años en el puesto actual
+Sin posibilidad de vacaciones
+Teletrabajo disponible"
+label_settings = SubResource("LabelSettings_15q6v")
+autowrap_mode = 3
+
+[node name="Paper07" type="Sprite2D" parent="." unique_id=77864897]
+visible = false
+position = Vector2(584, 360)
+texture = ExtResource("2_nqufs")
+
+[node name="back_bt_07" type="Button" parent="Paper07" unique_id=894274763]
+offset_left = -344.0
+offset_top = 192.0
+offset_right = -272.0
+offset_bottom = 264.0
+icon = ExtResource("4_nqufs")
+
+[node name="label_23" type="Label" parent="Paper07" unique_id=822724446]
+offset_left = -328.0
+offset_top = -312.0
+offset_right = 328.0
+offset_bottom = -179.0
+text = "SUELDO: 35446'84 € anuales
+Puesto: Ingenierio Informático de subredes directivo
+Empresa: PH Inc.
+Permanencia durante 3 años en el puesto actual
+Sin posibilidad de vacaciones
+Teletrabajo disponible"
+label_settings = SubResource("LabelSettings_15q6v")
+autowrap_mode = 3
+
+[connection signal="pressed" from="Paper01/label_10/label_10_bt" to="." method="_on_label_10_bt_pressed"]
+[connection signal="pressed" from="Paper01/label_11/label_11_bt" to="." method="_on_label_11_bt_pressed"]
+[connection signal="pressed" from="Paper01/back_bt_01" to="." method="_on_back_bt_01_pressed"]
+[connection signal="pressed" from="Paper02/label_13/label_13_bt" to="." method="_on_label_13_bt_pressed"]
+[connection signal="pressed" from="Paper02/label_14/label_14_bt" to="." method="_on_label_14_bt_pressed"]
+[connection signal="pressed" from="Paper02/back_bt_02" to="." method="_on_back_bt_02_pressed"]
+[connection signal="pressed" from="Paper03/back_bt_03" to="." method="_on_back_bt_03_pressed"]
+[connection signal="pressed" from="Paper04/back_bt_04" to="." method="_on_back_bt_04_pressed"]
+[connection signal="pressed" from="Paper05/back_bt_05" to="." method="_on_back_bt_05_pressed"]
+[connection signal="pressed" from="Paper06/back_bt_06" to="." method="_on_back_bt_06_pressed"]
+[connection signal="pressed" from="Paper07/back_bt_07" to="." method="_on_back_bt_07_pressed"]

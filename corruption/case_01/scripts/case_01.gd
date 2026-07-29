@@ -10,6 +10,7 @@ var nombre_1 = "a"
 #nombres y apellidos disponibles para los personajes
 
 func _ready():
+	$Paper02.hide()
 	randomize()
 	masculino_0 = randi_range(0, 1)
 	masculino_1 =  randi_range(0, 1)
@@ -35,4 +36,104 @@ func _ready():
 		nombre_1 = nombres_m.pick_random() + " " + apellidos.pick_random() + " " + apellidos.pick_random()
 		print(nombre_1)
 		$Paper01/label_05.text = nombre_1
+	$Paper03/label_15.text = "Si tuviera que elegir entre alguno de mis dos
+	padres elegiría definitivamente a " + nombre_1 + " ," + nombre_0 + " es mucho más egoísta y nunca me
+	deja salir hasta tarde"     
+	$Paper04/label_16.text = "No quiero elegir entre mis padres, pero a " + nombre_1 + " a veces
+	se le va la cabeza y nos pega, y creo que eso no me gusta"            
+					 
 	
+
+
+func _on_label_10_bt_pressed() -> void:
+	$Paper01.hide()
+	$Paper02.show()
+	$Paper03.hide()
+	$Paper04.hide()
+	$Paper05.hide()
+	$Paper06.hide()
+	$Paper07.hide()
+
+func _on_label_11_bt_pressed() -> void:
+	$Paper01.hide()
+	$Paper02.hide()
+	$Paper03.hide()
+	$Paper04.hide()
+	$Paper05.show()
+	$Paper06.hide()
+	$Paper07.hide()
+
+func _on_label_13_bt_pressed() -> void:
+	$Paper01.hide()
+	$Paper02.hide()
+	$Paper03.show()
+	$Paper04.hide()
+	$Paper05.hide()
+	$Paper06.hide()
+	$Paper07.hide()
+
+func _on_label_14_bt_pressed() -> void:
+	$Paper01.hide()
+	$Paper02.hide()
+	$Paper03.hide()
+	$Paper04.show()
+	$Paper05.hide()
+	$Paper06.hide()
+	$Paper07.hide()
+
+func _on_back_bt_01_pressed() -> void:
+	get_tree().change_scene_to_file("res://main/main.tscn")
+
+func _on_back_bt_02_pressed() -> void:
+	$Paper01.show()
+	$Paper02.hide()
+	$Paper03.hide()
+	$Paper04.hide()
+	$Paper05.hide()
+	$Paper06.hide()
+	$Paper07.hide()
+
+func _on_back_bt_03_pressed() -> void:
+	$Paper01.hide()
+	$Paper02.show()
+	$Paper03.hide()
+	$Paper04.hide()
+	$Paper05.hide()
+	$Paper06.hide()
+	$Paper07.hide()
+
+func _on_back_bt_04_pressed() -> void:
+	$Paper01.hide()
+	$Paper02.show()
+	$Paper03.hide()
+	$Paper04.hide()
+	$Paper05.hide()
+	$Paper06.hide()
+	$Paper07.hide()
+
+func _on_back_bt_05_pressed() -> void:
+	$Paper01.show()
+	$Paper02.hide()
+	$Paper03.hide()
+	$Paper04.hide()
+	$Paper05.hide()
+	$Paper06.hide()
+	$Paper07.hide()
+
+func _on_back_bt_06_pressed() -> void:
+	$Paper01.hide()
+	$Paper02.hide()
+	$Paper03.hide()
+	$Paper04.hide()
+	$Paper05.hide()
+	$Paper06.show()
+	$Paper07.hide()
+
+func _on_back_bt_07_pressed() -> void:
+	$Paper01.hide()
+	$Paper02.hide()
+	$Paper03.hide()
+	$Paper04.hide()
+	$Paper05.hide()
+	$Paper06.hide()
+	$Paper07.hide()
