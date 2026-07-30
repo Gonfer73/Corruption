@@ -274,6 +274,15 @@ layout_mode = 0
 offset_right = 416.0
 offset_bottom = 24.0
 
+[node name="label_22" type="Label" parent="Paper05" unique_id=1943136062]
+offset_left = -328.0
+offset_top = -184.0
+offset_right = 328.0
+offset_bottom = -51.0
+text = "Colegio de los menores en Avenida de la paz, 76009, 22"
+label_settings = SubResource("LabelSettings_15q6v")
+autowrap_mode = 3
+
 [node name="back_bt_05" type="Button" parent="Paper05" unique_id=502493186]
 offset_left = -344.0
 offset_top = 192.0
@@ -293,7 +302,7 @@ offset_right = -272.0
 offset_bottom = 264.0
 icon = ExtResource("4_nqufs")
 
-[node name="label_22" type="Label" parent="Paper06" unique_id=1557514545]
+[node name="label_23" type="Label" parent="Paper06" unique_id=1557514545]
 offset_left = -328.0
 offset_top = -312.0
 offset_right = 328.0
@@ -319,17 +328,71 @@ offset_right = -272.0
 offset_bottom = 264.0
 icon = ExtResource("4_nqufs")
 
-[node name="label_23" type="Label" parent="Paper07" unique_id=822724446]
+[node name="label_24" type="Label" parent="Paper07" unique_id=822724446]
 offset_left = -328.0
 offset_top = -312.0
 offset_right = 328.0
 offset_bottom = -179.0
-text = "SUELDO: 35446'84 € anuales
-Puesto: Ingenierio Informático de subredes directivo
-Empresa: PH Inc.
-Permanencia durante 3 años en el puesto actual
-Sin posibilidad de vacaciones
-Teletrabajo disponible"
+text = "Domicilio en C/ Blas Infante, 76009,  34, 3ºA
+	Última valoración del inmueble en 320.00'00 €
+
+Garaje en C/ Blas Infante, 76009, 34, 
+	Última valoración del inmueble en 20.00'00 €
+
+"
+label_settings = SubResource("LabelSettings_15q6v")
+autowrap_mode = 3
+
+[node name="Paper08" type="Sprite2D" parent="." unique_id=1046544925]
+visible = false
+position = Vector2(584, 360)
+texture = ExtResource("2_nqufs")
+
+[node name="back_bt_08" type="Button" parent="Paper08" unique_id=1412441201]
+offset_left = -344.0
+offset_top = 192.0
+offset_right = -272.0
+offset_bottom = 264.0
+icon = ExtResource("4_nqufs")
+
+[node name="label_25" type="Label" parent="Paper08" unique_id=493130129]
+offset_left = -328.0
+offset_top = -312.0
+offset_right = 328.0
+offset_bottom = -179.0
+text = "SUELDO: 29454'44 € anuales
+Puesto: Cajero
+Empresa: Triangletrois SA
+Permanencia durante 12 años en el puesto actual
+34 días de vacaciones
+Teletrabajo no disponible"
+label_settings = SubResource("LabelSettings_15q6v")
+autowrap_mode = 3
+
+[node name="Paper09" type="Sprite2D" parent="." unique_id=296123914]
+visible = false
+position = Vector2(584, 360)
+texture = ExtResource("2_nqufs")
+
+[node name="back_bt_09" type="Button" parent="Paper09" unique_id=1809836838]
+offset_left = -344.0
+offset_top = 192.0
+offset_right = -272.0
+offset_bottom = 264.0
+icon = ExtResource("4_nqufs")
+
+[node name="label_26" type="Label" parent="Paper09" unique_id=105402659]
+offset_left = -328.0
+offset_top = -312.0
+offset_right = 328.0
+offset_bottom = -179.0
+text = "Domicilio en C/ Blas Infante, 76009,  34, 3ºA
+	Última valoración del inmueble en 320.00'00 €
+
+Garaje en C/ Blas Infante, 76009, 34, 
+	Última valoración del inmueble en 20.00'00 €
+
+"
 label_settings = SubResource("LabelSettings_15q6v")
 autowrap_mode = 3
 
@@ -341,6 +404,12 @@ autowrap_mode = 3
 [connection signal="pressed" from="Paper02/back_bt_02" to="." method="_on_back_bt_02_pressed"]
 [connection signal="pressed" from="Paper03/back_bt_03" to="." method="_on_back_bt_03_pressed"]
 [connection signal="pressed" from="Paper04/back_bt_04" to="." method="_on_back_bt_04_pressed"]
+[connection signal="pressed" from="Paper05/label_18/label_18_bt" to="." method="_on_label_18_bt_pressed"]
+[connection signal="pressed" from="Paper05/label_19/label_19_bt" to="." method="_on_label_19_bt_pressed"]
+[connection signal="pressed" from="Paper05/label_20/label_20_bt" to="." method="_on_label_20_bt_pressed"]
+[connection signal="pressed" from="Paper05/label_21/label_21_bt" to="." method="_on_label_21_bt_pressed"]
 [connection signal="pressed" from="Paper05/back_bt_05" to="." method="_on_back_bt_05_pressed"]
 [connection signal="pressed" from="Paper06/back_bt_06" to="." method="_on_back_bt_06_pressed"]
 [connection signal="pressed" from="Paper07/back_bt_07" to="." method="_on_back_bt_07_pressed"]
+[connection signal="pressed" from="Paper08/back_bt_08" to="." method="_on_back_bt_08_pressed"]
+[connection signal="pressed" from="Paper09/back_bt_09" to="." method="_on_back_bt_09_pressed"]

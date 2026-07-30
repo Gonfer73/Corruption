@@ -1,27 +1,55 @@
 [gd_scene format=3 uid="uid://bugr3jca4wli0"]
 
+[ext_resource type="Script" uid="uid://ug2w32w4k7jl" path="res://main/scripts/main.gd" id="1_3wy1v"]
 [ext_resource type="Texture2D" uid="uid://d3ejq3i4x3cp2" path="res://main/sprites/back_001.png" id="1_53q0u"]
 [ext_resource type="Texture2D" uid="uid://daou3tqoxubob" path="res://main/sprites/character_01.png" id="2_xwkvk"]
 [ext_resource type="Texture2D" uid="uid://8sxilrv274dr" path="res://main/sprites/back_002.png" id="3_c651c"]
+[ext_resource type="Texture2D" uid="uid://c1k2osqd42lds" path="res://case_01/sprites/paper_01.png" id="4_c651c"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_15q6v"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3wy1v"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kfbq2"]
+bg_color = Color(1, 1, 1, 1)
 
 [node name="main" type="Node2D" unique_id=703750880]
+script = ExtResource("1_3wy1v")
 
-[node name="Back001" type="Sprite2D" parent="." unique_id=101725299]
+[node name="back_01" type="Sprite2D" parent="." unique_id=101725299]
 position = Vector2(578, 324)
 rotation = 3.1430352
 texture = ExtResource("1_53q0u")
 
-[node name="Character01" type="Sprite2D" parent="." unique_id=1621624015]
+[node name="character_01" type="Sprite2D" parent="." unique_id=1621624015]
 position = Vector2(167, 87)
 scale = Vector2(0.3698701, 0.40314952)
 texture = ExtResource("2_xwkvk")
 flip_h = true
 
-[node name="Character02" type="Sprite2D" parent="." unique_id=217363621]
+[node name="character_02" type="Sprite2D" parent="." unique_id=217363621]
 position = Vector2(987.99994, 80)
 scale = Vector2(0.3769254, 0.406156)
 texture = ExtResource("2_xwkvk")
 
-[node name="Back002" type="Sprite2D" parent="." unique_id=767982283]
+[node name="back_02" type="Sprite2D" parent="." unique_id=767982283]
 position = Vector2(696, 544)
 texture = ExtResource("3_c651c")
+
+[node name="guide_01" type="Sprite2D" parent="." unique_id=72836804]
+position = Vector2(551.99994, 552.00006)
+scale = Vector2(0.17283951, 0.25555563)
+texture = ExtResource("4_c651c")
+
+[node name="guide_01_bt" type="Button" parent="guide_01" unique_id=609418233]
+offset_left = -370.28528
+offset_top = -344.34793
+offset_right = 341.35754
+offset_bottom = 344.3475
+theme_override_styles/normal = SubResource("StyleBoxFlat_15q6v")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3wy1v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kfbq2")
+
+[connection signal="pressed" from="guide_01/guide_01_bt" to="." method="_on_guide_01_bt_pressed"]
